@@ -85,11 +85,18 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img
-              class="img-fluid"
-              src="/assets/ebook-cover.png"
-              alt="ebook cover"
-            />
+            <!-- tooltip -->
+            <span
+              class="tt"
+              data-bs-placemnet="bottom"
+              title="Net Ninja Book Cover"
+            >
+              <img
+                class="img-fluid"
+                src="/assets/ebook-cover.png"
+                alt="ebook cover"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -474,6 +481,16 @@
                   id="email"
                   placeholder="e.g. mario@example.com"
                 />
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span
+                    class="tt"
+                    data-bs-placemnet="bottom"
+                    title="Enter an email address we can reply to"
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <label for="name" class="form-label">Name:</label>
@@ -487,6 +504,16 @@
                   id="name"
                   placeholder="e.g. Mario"
                 />
+                    <!-- tooltip -->
+                    <span class="input-group-text">
+                      <span
+                        class="tt"
+                        data-bs-placemnet="bottom"
+                        title="Pretty self explanatory really..."
+                      >
+                        <i class="bi bi-question-circle text-muted"></i>
+                      </span>
+                    </span>
               </div>
 
               <label for="subject" class="form-label"
@@ -528,5 +555,12 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const tooltip = document.querySelectorAll(".tt");
+      tooltip.forEach((t) => {
+        new boostrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
