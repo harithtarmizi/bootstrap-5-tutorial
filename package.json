@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/harithtarmizi/bootstrap-5-tutorial/issues"
   },
-  "homepage": "https://github.com/harithtarmizi/bootstrap-5-tutorial#readme"
+  "homepage": "https://github.com/harithtarmizi/bootstrap-5-tutorial#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
 }
